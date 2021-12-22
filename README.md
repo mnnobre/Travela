@@ -1,7 +1,9 @@
 # Travela
 
 O projeto Travela é um site de turismo proposto pela FIAP 
-
+<div>
+ Aqui você pode ver o resultado do projeto: https://mnnobre.github.io/Travela/
+</div>
 
 ## 🛠️ Construído com
 
