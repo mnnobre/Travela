@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Travela</title>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6SePNxGgb301rtDbIZC96qexmspS-0_w"></script>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light col-12">
+                <a class="navbar-brand icon-header my-2" href="#">
+                    <img src="./src/img/logo.svg" width="147" height="32" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav btn-menu">
+                        <li class="nav-item mr-4 my-2">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item mr-4 my-2">
+                            <a class="nav-link" href="#">Cadastro</a>
+                        </li>
+                        <form class="nav-item form-inline mr-4 my-2">
+                            <button class="btn btn-sm btn-outline-secondary" type="button">Acessar conta</button>
+                        </form>
+                        <li class="nav-item my-2">
+                            <a class="nav-link p-0" href="#"><img src="./src/img/instagram.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="hero-img container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="container mt-5">
+                        <div class="col-8 p-0">
+                            <h1 class="display-4 titulo-Spotlight">Pegue sua mochila e vamos ao mundo. <b
+                                    class="spotlight">Sua viagem
+                                    começa
+                                    aqui.</b></h1>
+                            <p class="lead text-white">Baixe já nosso aplicativo. Disponível para IOS e Android.
+                            </p>
+                            <a class="btn btn-lg pl-0 expander" onclick="hide('minhaDiv');" href="#" role="button"><img
+                                    src="./src/img/downloadbtn1.png" alt=""></a>
+                            <a class="btn btn-lg pl-0" href="#" role="button"><img src="./src/img/downloadbtn2.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-12">
+                        <a class="btn btn-lg btn-block p-3 " data-toggle="collapse" href="#collapse-section1"
+                            role="button" aria-expanded="false" aria-controls="collapse-section1" href="#"
+                            role="button"><img src="./src/img/mousebtn.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+
+                        <h1 class="display-4 titulo-main">Para onde vamos?</h1>
+                        <p class="lead text">Amet dignissim pretium tincidunt enim praesent orci, dolor, in
+                            auctor.
+                        </p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 jumbotron-form mt-5">
+                                <div class="container">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-lg-2 col-sm-12 mx-1 form-content">
+                                            <img src="./src/img/pin-icon.png" alt="">
+                                            <input type="text" class="form-control" placeholder=" Digite o local">
+                                        </div>
+                                        <div class="col-lg-2 col-sm-12 mx-1">
+                                            <input type="date" class="form-control" placeholder="Check-in">
+                                        </div>
+                                        <div class="col-lg-2 col-sm-12 mx-1">
+                                            <input type="date" class="form-control" placeholder="Check-out">
+                                        </div>
+                                        <div class="col-lg-2 col-sm-12 mx-1 form-content">
+                                            <img src="./src/img/user-icon.png" alt="">
+                                            <input type="number" class="fcontroltraveler" placeholder="Viajantes">
+                                        </div>
+                                        <div class="col-lg-2 col-sm-12 mt-2 mx-1 pr-0">
+                                            <button type="button" class="btn btn-primary-travela">Buscar
+                                                pacotes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- section 2 -->
+        <section class="container mb-5">
+            <div class="row m-0">
+                <div class="col-12 text-center my-4 p-0">
+                    <h1 class="display-4 titulo-main">Ofertas recomendadas</h1>
+                    <p class="lead text">Selecionamos as melhores ofertas para você. Escolha já a sua.</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center row">
+                    <div class="d-flex col-md-4 col-lg-3">
+                        <a class="offer-button" id="touristButton">
+                            <div class="py-3"><img src="./src/img/offersicon1.png" alt=""></div>
+                            <div class="pl-3 pt-3">
+                                <h6 class="titulo-main">Pontos turísticos</h6>
+                                <p class="text">Veja aqui os pontos mais conhecidos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex col-md-4 col-lg-3">
+                    <a class="offer-button" id="hotelButton">
+                        <div class="py-3"><img src="./src/img/offersicon2.png" alt=""></div>
+                        <div class="pl-3 pt-3">
+                            <h6 class="titulo-main">Hotéis em promoção</h6>
+                            <p class="text">Todos os hotéis parceiros e suas ofertas</p>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex col-md-4 col-lg-3">
+                <a class="offer-button" id="restaurantsButton">
+                    <div class="py-3"><img src="./src/img/offersicon3.png" alt=""></div>
+                    <div class="pl-3 pt-3">
+                        <h6 class="titulo-main">Restaurantes</h6>
+                        <p class="text">Para saborear enquanto explora</p>
+                </a>
+            </div>
+            </div>
+            <div class="d-flex col-md-4 col-lg-3">
+                <a class="offer-button" id="carsButton">
+                    <div class="py-3"><img src="./src/img/offersicon4.png" alt=""></div>
+                    <div class="pl-3 pt-3">
+                        <h6 class="titulo-main">Aluguel de carros</h6>
+                        <p class="text">Facilite o seu trajeto, vá de carro</p>
+                </a>
+            </div>
+            </div>
+            </div>
+            <!-- Swiper FALTA IMPLEMENTAR!!!!!!!!!!!!!! -->
+            <!-- <div class="row">
+                <div style="width: 70vw;">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./src/img/slide01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./src/img/slide02.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./src/img/slide03.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./src/img/slide04.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./src/img/slide05.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <div>
+        </div>
+        <!-- section 3 -->
+
+        <!-- Tourist spots -->
+        <section class="container-fluid container-offer tourist" id="tourist">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center p-0">
+                        <h1 class="display-4 titulo-main">Pontos turísticos</h1>
+                    </div>
+                    <div id="carouseltouristControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/angra.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Angra Dos Reis</p>
+                                            <h1 class="display-4 titulo-secondary">Angra dos Reis, uma ilha para cada
+                                                dia do ano</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img src="./src/img/plane.png"
+                                                            alt="">
+                                                        Voo</div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/accommodation.png" alt=""> Hospedagem
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img src="./src/img/sun.png"
+                                                            alt=""> 6 noites</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Já imaginou conhecer uma ilha nova por dia?
+                                                            Em Angra, isso é possível! Com 365 ilhas rodeadas pela Mata
+                                                            Atlântica, o destino preferido dos artistas é também a
+                                                            escapada perfeita para você relaxar e se conectar com a
+                                                            natureza.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar meu
+                                                            pacote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/buzios.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Búzios</p>
+                                            <h1 class="display-4 titulo-secondary">Búzios e o som do mar, a escapada
+                                                perfeita</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img src="./src/img/plane.png"
+                                                            alt="">
+                                                        Voo</div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/accommodation.png" alt=""> Hospedagem
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img src="./src/img/sun.png"
+                                                            alt=""> 6 noites</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Viaje para Búzios e viva dias de sombra e
+                                                            água fresca, um bom banho de mar e um lindo entardecer é
+                                                            tudo o que você precisa. Aproveite esse passeio para
+                                                            descansar, conhecer novas paisagens e viver outras
+                                                            experiências.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar meu
+                                                            pacote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/foz.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Foz do Iguaçu</p>
+                                            <h1 class="display-4 titulo-secondary">Entre em contato com a natureza em
+                                                Foz do Iguaçu</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img src="./src/img/plane.png"
+                                                            alt="">
+                                                        Voo</div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/accommodation.png" alt=""> Hospedagem
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img src="./src/img/sun.png"
+                                                            alt=""> 6 noites</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Um fim de semana em Foz do Iguaçu é tudo o
+                                                            que você precisa para renovar as energias. O contato com a
+                                                            natureza, combinado com as amenidades da hospedagem levarão
+                                                            você a desfrutar ao máximo dessa experiência.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar meu
+                                                            pacote</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-prev button-slideprev"
+                            href="#carouseltouristControls" role="button" data-slide="prev">
+                            <img src="./src/img/buttonprev.svg" alt="">
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-next button-slidenext"
+                            href="#carouseltouristControls" role="button" data-slide="next">
+                            <img src="./src/img/buttonnext.svg" alt="">
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotel -->
+
+        <section class="container-fluid container-offer hide" id="hotel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center p-0">
+                        <h1 class="display-4 titulo-main">Hotéis</h1>
+                    </div>
+                    <div id="carouselhotelControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/kastel.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Recife</p>
+                                            <h1 class="display-4 titulo-secondary">Kastel Manibu</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-5 mb-1"><img
+                                                            src="./src/img/noun_Air Con.svg" alt="">
+                                                        Ar-condicionado nas áreas comuns</div>
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img
+                                                            src="./src/img/noun_swimmer.svg" alt=""> Piscina
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/noun_wifi.svg" alt=""> Wi-Fi
+                                                        grátis nas
+                                                        áreas
+                                                        comuns</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Localizado na Praia de Boa Viagem, o Kastel
+                                                            Manibu
+                                                            Recife - Boa Viagem dispõe de área de lazer, situada na
+                                                            cobertura do
+                                                            hotel, que conta com piscina, sauna, salão de jogos e
+                                                            academia.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar um
+                                                            quarto</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/comfot.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Maceió</p>
+                                            <h1 class="display-4 titulo-secondary">Comfort Hotel</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-5 mb-1"><img
+                                                            src="./src/img/noun_Air Con.svg" alt="">
+                                                        Ar-condicionado nas áreas comuns</div>
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img
+                                                            src="./src/img/noun_swimmer.svg" alt=""> Piscina
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/noun_wifi.svg" alt=""> Wi-Fi
+                                                        grátis nas
+                                                        áreas
+                                                        comuns</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Situado na Ponta Verde, em Maceió, o
+                                                            Comfort Hotel Maceió encontra-se a uma quadra da orla da
+                                                            praia. Oferece piscina ao ar livre com solário e recepção
+                                                            com equipe disponível 24h para prestar informações da
+                                                            região.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar um
+                                                            quarto</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/wyndham.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Foz do Iguaçu</p>
+                                            <h1 class="display-4 titulo-secondary">Wyndham Golden Foz Suítes</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-5 mb-1"><img
+                                                            src="./src/img/noun_Air Con.svg" alt="">
+                                                        Ar-condicionado nas áreas comuns</div>
+                                                    <div class="col-sm-12 col-md-3 mb-1"><img
+                                                            src="./src/img/noun_swimmer.svg" alt=""> Piscina
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 mb-1"><img
+                                                            src="./src/img/noun_wifi.svg" alt=""> Wi-Fi
+                                                        grátis nas
+                                                        áreas
+                                                        comuns</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="my-4 text">Localizado no Centro de Foz do Iguaçu, o
+                                                            Wyndham Golden Foz Suites dispõe de suítes com área de
+                                                            estar, piscina com solário e atende 24h em sua recepção.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar um
+                                                            quarto</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-prev button-slideprev"
+                            href="#carouselhotelControls" role="button" data-slide="prev">
+                            <img src="./src/img/buttonprev.svg" alt="">
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-next button-slidenext"
+                            href="#carouselhotelControls" role="button" data-slide="next">
+                            <img src="./src/img/buttonnext.svg" alt="">
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants -->
+
+        <section class="container-fluid container-offer hide" id="restaurants">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center p-0">
+                            <h1 class="display-4 titulo-main">Restaurantes</h1>
+                        </div>
+                        <div id="carouselrestaurantsControls" class="carousel slide" data-ride="carousel"
+                            data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xl-6 my-5">
+                                            <img class="img-fluid" src="./src/img/aramburu.jpg">
+                                        </div>
+                                        <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                            <div class="package-card">
+                                                <p><img src="./src/img/pin-icon.png" alt="">Buenos Aires</p>
+                                                <h1 class="display-4 titulo-secondary">Aramburu</h1>
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Cozinhas</h5>
+                                                            <p>Argentina,Internacional</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Vantagens</h5>
+                                                            <p class="my-4 text">Acesso para cadeirantes, Serve bebida
+                                                                alcoólica, Aceita American Express, Aceita MasterCard,
+                                                                Aceita Visa, Wi-fi gratuito, Reservas, Lugares para
+                                                                sentar,
+                                                                Aceita cartão de crédito, Serviço de mesa,
+                                                                Vales-presente
+                                                                disponíveis.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button type="button"
+                                                                class="btn btn-primary-travela mt-5">Reservar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mapa -->
+                                    <div class="container">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div id="map1" class="maps col-12 mb-5 map"
+                                                data-gps="-34.591285073963114, -58.38950285669107"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xl-6 my-5">
+                                            <img class="img-fluid" src="./src/img/hutong.jpg">
+                                        </div>
+                                        <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                            <div class="package-card">
+                                                <p><img src="./src/img/pin-icon.png" alt="">Pequim</p>
+                                                <h1 class="display-4 titulo-secondary">TRB Hutong</h1>
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Cozinhas</h5>
+                                                            <p>Francesa, Europeia, Contemporânea, Caucasiana</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Vantagens</h5>
+                                                            <p class="my-4 text">Estacionamento com manobrista,
+                                                                Reservas, Restaurante privativo,
+                                                                Acesso para cadeirantes, Serve bebida alcoólica, Bar
+                                                                completo, Pagamento digital, Wi-fi gratuito, Aceita
+                                                                cartão
+                                                                de
+                                                                crédito, Serviço de mesa.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button type="button"
+                                                                class="btn btn-primary-travela mt-5">Reservar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mapa -->
+                                    <div class="container">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div id="map2" class="maps col-12 mb-5 map"
+                                                data-gps="39.904082357610825, 116.40750933673549"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xl-6 my-5">
+                                            <img class="img-fluid" src="./src/img/scopri.jpg">
+                                        </div>
+                                        <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                            <div class="package-card">
+                                                <p><img src="./src/img/pin-icon.png" alt="">Melbourne</p>
+                                                <h1 class="display-4 titulo-secondary">Scopri</h1>
+                                                <div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Cozinhas</h5>
+                                                            <p>Italiana</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5>Vantagens</h5>
+                                                            <p class="my-4 text">Estacionamento disponível, Bar
+                                                                completo,
+                                                                Wi-fi gratuito, Acesso para
+                                                                cadeirantes, Serve bebida alcoólica, Vinho e cerveja,
+                                                                Aceita cartão de crédito, Serviço de mesa.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button type="button"
+                                                                class="btn btn-primary-travela mt-5">Reservar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mapa -->
+                                    <div class="container">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div id="map3" class="maps col-12 mb-5 map"
+                                                data-gps="-37.79555568849925, 144.97486152546847"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev button-slideprev" href="#carouselrestaurantsControls"
+                                style="height: 10px; top: 50%;" role="button" data-slide="prev">
+                                <img src="./src/img/buttonprev.svg" alt="">
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next button-slidenext" href="#carouselrestaurantsControls"
+                                style="height: 10px; top: 50%;" role="button" data-slide="next">
+                                <img src="./src/img/buttonnext.svg" alt="">
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cars -->
+
+        <section class="container-fluid container-offer hide" id="cars">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center p-0">
+                        <h1 class="display-4 titulo-main">Carros</h1>
+                    </div>
+                    <div id="carouselcarsControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/nissan.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Foz do Iguaçu</p>
+                                            <h1 class="display-4 titulo-secondary">Nissan - March</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p>Cancelamento gratuito até 48 horas antes da data de retirada
+                                                        </p>
+                                                        <p>Cobertura por dano e roubo com franquia</p>
+                                                        <p>Seguro de responsabilidade civil</p>
+                                                        <h6>Capacidade</h6>
+                                                        <ul>
+                                                            <li>4 pessoas</li>
+                                                            <li>1 Mala</li>
+                                                            <li>1 Bagagem de mão</li>
+                                                        </ul>
+                                                        <h6>Recursos</h6>
+                                                        <ul>
+                                                            <li>A/C</li>
+                                                            <li>Manual</li>
+                                                            <li>4 portas</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xl-6 my-5">
+                                        <img class="img-fluid" src="./src/img/volkswagen.jpg">
+                                    </div>
+                                    <div class="col-sm-12 col-xl-6 my-5 px-5">
+                                        <div class="package-card">
+                                            <p><img src="./src/img/pin-icon.png" alt="">Foz do Iguaçu</p>
+                                            <h1 class="display-4 titulo-secondary">Volkswagen Gol</h1>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p>Cancelamento gratuito até 48 horas antes da data de retirada
+                                                        </p>
+                                                        <p>Cobertura por dano e roubo com franquia</p>
+                                                        <p>Seguro de responsabilidade civil</p>
+                                                        <h6>Capacidade</h6>
+                                                        <ul>
+                                                            <li>5 pessoas</li>
+                                                            <li>1 Mala</li>
+                                                            <li>1 Bagagem de mão</li>
+                                                        </ul>
+                                                        <h6>Recursos</h6>
+                                                        <ul>
+                                                            <li>A/C</li>
+                                                            <li>Manual</li>
+                                                            <li>4 portas</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button"
+                                                            class="btn btn-primary-travela mt-5">Reservar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-prev button-slideprev"
+                            href="#carouselcarsControls" role="button" data-slide="prev">
+                            <img src="./src/img/buttonprev.svg" alt="">
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a style="height: 10px; top: 50%;" class="carousel-control-next button-slidenext"
+                            href="#carouselcarsControls" role="button" data-slide="next">
+                            <img src="./src/img/buttonnext.svg" alt="">
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 -->
+        <section class="container">
+            <div class="row mx-0 mb-5">
+                <div class="col-12 text-center my-4 p-0">
+                    <h1 class="display-4 titulo-main">Blog do Travela</h1>
+                    <p class="text">Viajar com os melhores companhias pode tornar teu passeio inesquecível.</p>
+                </div>
+                <div class="container-card">
+                    <div class="blog-card">
+                        <img class="card-img-top" src="./src/img/cardblog01.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="text">Viajar com as melhores companhias pode tornar teu passeio inesquecível. Veja
+                                nossas dicas de viagens em grupo.</p>
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="col-2 p-0 mt-1">
+                                        <img src="./src/img/perfil-icon.png" alt="">
+                                    </div>
+                                    <div class="col-8 p-0 ml-2">
+                                        <h6 class="m-0 titulo-main">Mario Antunes</h6>
+                                        <p>Agente de Mochilas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img class="card-img-top" src="./src/img/cardblog02.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="text">Test Track, a famosa atração do Epcot Center é reatualizada! Conheça todas
+                                as informações necessárias para obter sucesso.</p>
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="col-2 p-0 mt-1">
+                                        <img src="./src/img/perfil-icon.png" alt="">
+                                    </div>
+                                    <div class="col-8 p-0 ml-2">
+                                        <h6 class="m-0 titulo-main">Mario Antunes</h6>
+                                        <p>Agente de Mochilas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img class="card-img-top" src="./src/img/cardblog03.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="text">Trilhas fantásticas para aproveitar corridas enquanto explora lindas
+                                paisagens. O educaro físico Mario Silva dá dicas.</p>
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="col-2 p-0 mt-1">
+                                        <img src="./src/img/perfil-icon.png" alt="">
+                                    </div>
+                                    <div class="col-8 p-0 ml-2 ">
+                                        <h6 class="m-0 titulo-main">Mario Antunes</h6>
+                                        <p>Agente de Mochilas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img class="card-img-top" src="./src/img/cardblog04.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="text">Viajar em tempo de pandemia pode ajudar a relaxar e manter-se com o
+                                psicologico mais preparado para adversdidades. </p>
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="col-2 p-0 mt-1">
+                                        <img src="./src/img/perfil-icon.png" alt="">
+                                    </div>
+                                    <div class="col-8 p-0 ml-2">
+                                        <h6 class="m-0 titulo-main">Mario Antunes</h6>
+                                        <p>Agente de Mochilas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="./src/js/script.js"></script>
+</body>
+
+</html>
